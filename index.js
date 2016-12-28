@@ -17,7 +17,7 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 
-app.intent('sayWhoMakesCuppa',
+app.intent('sayWhoDoesWhat',
   {
     "slots":{"intentType":"LITERAL"}
 	,"utterances":[ 
@@ -27,7 +27,7 @@ app.intent('sayWhoMakesCuppa',
   function(request,response) {
     var intentType = request.slot('intentType');
     response.say("You asked for "+intentType);
-    response.say("It's Andrea's turn.")
+    response.say(".It's Andrea's turn.")
   }
 );
 
