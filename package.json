@@ -1,0 +1,23 @@
+{
+  "name": "whosturnisit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nutkracker/WhosTurnIsIt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nutkracker/WhosTurnIsIt/issues"
+  },
+  "homepage": "https://github.com/nutkracker/WhosTurnIsIt#readme",
+  "dependencies": {
+    "alexa-app": "^2.3.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
