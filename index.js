@@ -6,7 +6,7 @@ var app = new alexa.app( 'WhosTurnIsIt' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to Who\'s Turn Is It.' ).reprompt( 'Ready.' ).shouldEndSession( false );
+	response.say( 'Welcome to Who\'s Turn Is It.' ).reprompt( 'Ask me a question like \'Who should make the cup of tea\'' ).shouldEndSession( false );
 } );
 
 
@@ -26,7 +26,7 @@ app.intent('sayWhoDoesWhat',
   },
   function(request,response) {
     var intentType = request.slot('intentType');
-    response.say("You asked for "+intentType);
+    response.say("You asked for who's turn is it to "+intentType);
     response.say(".It's Andrea's turn.")
   }
 );
