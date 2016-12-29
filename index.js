@@ -27,8 +27,30 @@ app.intent('sayWhoDoesWhat',
   function(request,response) {
     var intentType = request.slot('intentType');
     response.say("You asked for who's turn is it to "+intentType);
-    response.say(".It's Andrea's turn.")
+
+    var whosToDoIt = randomIntInc(1,4);
+
+    switch(whosToDoIt)
+    {
+    	case 1:
+    		response.say(". It's Matthew's turn.")
+    		break;
+    	case 2:
+    		response.say(". It's Andrea's turn.")
+    		break;
+    	case 3:
+    		response.say(". It's Emilia's turn.")
+    		break;
+    	default:
+    		response.say(". It's Hannah's turn.")
+    		break;
+    }
+
   }
 );
+
+function randomIntInc (low, high) {
+    return Math.floor(Math.random() * (high - low + 1) + low);
+};
 
 module.exports = app;
